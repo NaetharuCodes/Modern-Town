@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcfd84462653909488c8d4f3ef7c9aaf, type: 3}
   m_Name: TileRegistry
   m_EditorClassIdentifier: Assembly-CSharp::TileRegistry
-  entries: []
+  entries:
+  - {fileID: 11400000, guid: 3eb0c99f967bb4648b426525724181fe, type: 2}
