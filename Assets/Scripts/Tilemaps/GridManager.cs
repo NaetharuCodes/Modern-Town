@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class GridManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Tilemap Layers")]
+    [SerializeField] private Tilemap basementTilemap;
+    [SerializeField] private Tilemap groundFloorTilemap;
+    [SerializeField] private Tilemap firstFloorTilemap;
+    [SerializeField] private Tilemap secondFloorTilemap;
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
