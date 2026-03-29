@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="../USS/PortraitBar.uss" />
+    <ui:VisualElement name="portrait-bar">
+        <!-- portraits are added dynamically by PortraitBarController -->
+    </ui:VisualElement>
+</ui:UXML>
+

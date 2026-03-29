@@ -1,0 +1,42 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="../USS/PortraitBar.uss" />
+    <Style src="../USS/BottomPanel.uss" />
+
+    <ui:VisualElement name="portrait-bar" />
+
+    <ui:VisualElement name="bottom-panel">
+        <ui:VisualElement name="panel-header">
+            <ui:Label name="agent-name" text="No Agent Selected" />
+            <ui:Label name="agent-meta" text="" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="tab-bar">
+            <ui:Button name="tab-stats"     text="Stats" />
+            <ui:Button name="tab-inventory" text="Inventory" />
+            <ui:Button name="tab-career"    text="Career" />
+            <ui:Button name="tab-social"    text="Social" />
+            <ui:Button name="tab-build"     text="Build" />
+            <ui:Button name="tab-catalogue" text="Catalogue" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="content-area">
+            <ui:VisualElement name="content-stats" />
+            <ui:VisualElement name="content-inventory">
+                <ui:Label text="Inventory — coming soon" class="placeholder-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="content-career">
+                <ui:Label text="Career &amp; Education — coming soon" class="placeholder-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="content-social">
+                <ui:Label text="Social — coming soon" class="placeholder-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="content-build">
+                <ui:Label text="Build — coming soon" class="placeholder-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="content-catalogue">
+                <ui:Label text="Catalogue — coming soon" class="placeholder-label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+</ui:UXML>
