@@ -36,10 +36,20 @@ public class AgentMover : MonoBehaviour
     {
         _currentPath = PathFinder.Instance.FindPath(_agent.gridPosition, target);
 
-        if (_currentPath == null || _currentPath.Count <= 1)
+        if (_currentPath == null)
+        {
+            Debug.LogWarning($"{_agent.FullName}: Could not find path from {_agent.gridPosition} to {target}.");
             return;
+        }
 
-        _pathIndex = 1; // index 0 is the current position
+        if (_currentPath.Count <= 1)
+        {
+            Debug.Log($"{_agent.FullName}: Already at target {target}.");
+            return;
+        }
+
+        Debug.Log($"{_agent.FullName}: Moving from {_agent.gridPosition} to {target} ({_currentPath.Count - 1} steps).");
+        _pathIndex = 1;
         _isMoving = true;
     }
 
@@ -47,6 +57,7 @@ public class AgentMover : MonoBehaviour
     {
         if (_pathIndex >= _currentPath.Count)
         {
+            Debug.Log($"{_agent.FullName}: Arrived at {_agent.gridPosition}.");
             _isMoving = false;
             return;
         }
@@ -62,9 +73,20 @@ public class AgentMover : MonoBehaviour
         }
     }
 
-    private Vector3 GridToWorld(Vector3Int gridPos)
+    // Draws the current path in the Scene view during Play mode
+    void OnDrawGizmos()
     {
-        // Tilemap cell centres sit at (x + 0.5, y + 0.5) in world space by default
-        return new Vector3(gridPos.x + 0.5f, gridPos.y + 0.5f, transform.position.z);
+        if (_currentPath == null || _currentPath.Count < 2) return;
+
+        Gizmos.color = Color.yellow;
+        for (int i = 0; i < _currentPath.Count - 1; i++)
+        {
+            Gizmos.DrawLine(GridToWorld(_currentPath[i]), GridToWorld(_currentPath[i + 1]));
+            Gizmos.DrawSphere(GridToWorld(_currentPath[i]), 0.1f);
+        }
+        Gizmos.DrawSphere(GridToWorld(_currentPath[^1]), 0.15f);
     }
+
+    private Vector3 GridToWorld(Vector3Int gridPos) =>
+        new Vector3(gridPos.x + 0.5f, gridPos.y + 0.5f, transform.position.z);
 }

@@ -23,6 +23,26 @@ public class PathFinder : MonoBehaviour
 
     public List<Vector3Int> FindPath(Vector3Int start, Vector3Int end)
     {
+        var startData = GetTileData(start);
+        if (startData == null)
+        {
+            Debug.LogWarning($"PathFinder: Start position {start} has no tile data — is it on the map?");
+            return null;
+        }
+
+        var endData = GetTileData(end);
+        if (endData == null)
+        {
+            Debug.LogWarning($"PathFinder: End position {end} has no tile data — is it on the map?");
+            return null;
+        }
+
+        if (!endData.IsPassable)
+        {
+            Debug.LogWarning($"PathFinder: End position {end} is impassable ({endData.passability}).");
+            return null;
+        }
+
         var openSet = new List<Node>();
         var visited = new Dictionary<Vector3Int, Node>();
 
@@ -56,7 +76,8 @@ public class PathFinder : MonoBehaviour
             }
         }
 
-        return null; // no path found
+        Debug.LogWarning($"PathFinder: No path found from {start} to {end} — route may be blocked.");
+        return null;
     }
 
     private TileData GetTileData(Vector3Int pos)
@@ -64,7 +85,11 @@ public class PathFinder : MonoBehaviour
         var tile = _gridManager.GroundFloorTilemap.GetTile(pos);
         if (tile == null) return null;
         var id = _gridManager.TileRegistry.GetId(tile);
-        if (id == null) return null;
+        if (id == null)
+        {
+            Debug.LogWarning($"PathFinder: Tile at {pos} exists on tilemap but has no registry entry.");
+            return null;
+        }
         return _gridManager.TileRegistry.GetTileData(id);
     }
 

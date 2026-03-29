@@ -7,7 +7,7 @@ public class AgentMoveTest : MonoBehaviour
         GetComponent<ActionQueue>().Enqueue(new AgentAction
         {
             type = ActionType.MoveTo,
-            targetPosition = new Vector3Int(10, 15, 0)
+            targetPosition = new Vector3Int(10, 5, 0)
         });
     }
 }

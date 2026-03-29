@@ -15,11 +15,17 @@ public class Agent : MonoBehaviour
     [Header("Needs")]
     public AgentNeeds needs = new AgentNeeds();
 
+    [Header("Traits")]
+    public AgentTraits traits = new AgentTraits();
+
     [Header("Active Commitments")]
     public Job currentJob;
     public ActiveEducation activeEducation;
     public List<ClubMembership> clubs = new();
     public List<AdHocActivity> upcomingActivities = new();
+
+    [Header("Relationships")]
+    public AgentRelationships relationships = new AgentRelationships();
 
     [Header("Inventory")]
     public List<string> inventory = new(); // stub — item IDs for now
