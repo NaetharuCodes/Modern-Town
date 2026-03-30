@@ -32,4 +32,19 @@ public class TileData : ScriptableObject
     };
 
     public bool IsPassable => passability != TilePassability.Impassable;
+
+    [Header("Exits")]
+    public bool canExitNorth = true;
+    public bool canExitSouth = true;
+    public bool canExitEast  = true;
+    public bool canExitWest  = true;
+
+    public bool CanExitTo(Vector3Int direction)
+    {
+        if (direction == Vector3Int.up)    return canExitNorth;
+        if (direction == Vector3Int.down)  return canExitSouth;
+        if (direction == Vector3Int.right) return canExitEast;
+        if (direction == Vector3Int.left)  return canExitWest;
+        return true;
+    }
 }

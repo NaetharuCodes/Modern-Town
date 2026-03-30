@@ -1,21 +1,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum MovementSpeed { Walk, Run }
+
 public class AgentMover : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float walkSpeed = 3f;
+    [SerializeField] private float runSpeed  = 6f;
 
     private Agent _agent;
     private ActionQueue _actionQueue;
     private List<Vector3Int> _currentPath;
     private int _pathIndex;
     private bool _isMoving;
+    private float _currentSpeed;
 
     void Awake()
     {
         _agent = GetComponent<Agent>();
         _actionQueue = GetComponent<ActionQueue>();
+        _currentSpeed = walkSpeed;
     }
+
+    public void SetSpeed(MovementSpeed speed) =>
+        _currentSpeed = speed == MovementSpeed.Run ? runSpeed : walkSpeed;
 
     void Update()
     {
@@ -63,7 +71,7 @@ public class AgentMover : MonoBehaviour
         }
 
         var targetWorldPos = GridToWorld(_currentPath[_pathIndex]);
-        transform.position = Vector3.MoveTowards(transform.position, targetWorldPos, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, targetWorldPos, _currentSpeed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, targetWorldPos) < 0.01f)
         {
@@ -73,7 +81,6 @@ public class AgentMover : MonoBehaviour
         }
     }
 
-    // Draws the current path in the Scene view during Play mode
     void OnDrawGizmos()
     {
         if (_currentPath == null || _currentPath.Count < 2) return;

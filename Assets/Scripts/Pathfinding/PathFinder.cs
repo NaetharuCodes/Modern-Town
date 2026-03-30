@@ -60,9 +60,16 @@ public class PathFinder : MonoBehaviour
             foreach (var dir in Neighbours)
             {
                 var neighbourPos = current.Position + dir;
+                var currentTileData = GetTileData(current.Position);
                 var tileData = GetTileData(neighbourPos);
 
                 if (tileData == null || !tileData.IsPassable)
+                    continue;
+
+                if (currentTileData != null && !currentTileData.CanExitTo(dir))
+                    continue;
+
+                if (!tileData.CanExitTo(-dir))
                     continue;
 
                 float newGCost = current.GCost + tileData.MovementCost;
