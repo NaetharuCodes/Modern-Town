@@ -14,3 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileRegistry
   entries:
   - {fileID: 11400000, guid: 3eb0c99f967bb4648b426525724181fe, type: 2}
+  - {fileID: 11400000, guid: f6fc64a8f8fe3864d80373db1ca8c534, type: 2}
+  - {fileID: 11400000, guid: 3661a5b7d1b7f414287ea688c7d0ad32, type: 2}
+  - {fileID: 11400000, guid: b4e21c6b1e6001245a671f89415d4e13, type: 2}
+  - {fileID: 11400000, guid: 26938043dd5a6ba43bf510268dbc2917, type: 2}
+  - {fileID: 11400000, guid: 652688d912f9b664c99dc755c6fd1efb, type: 2}
+  - {fileID: 11400000, guid: 78f7503b8ad5b7e46b5074b4cd453d2e, type: 2}
+  - {fileID: 11400000, guid: 9de9e78950975d945bd0381497caf0bc, type: 2}
+  - {fileID: 11400000, guid: 710c29ef2a472664a9bd9ab0ccfe51e2, type: 2}

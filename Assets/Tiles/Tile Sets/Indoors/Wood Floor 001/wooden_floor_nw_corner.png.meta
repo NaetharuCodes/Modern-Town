@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 909267aeac64dbe489821d81b7af3207
+guid: f8f6da23d41a543459b840ea4bb731e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7946905363760974341
-    second: wooden_floor_left_wall_001_0
+      213: 72738864896158549
+    second: wooden_floor_nw_corner_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wooden_floor_left_wall_001_0
+      name: wooden_floor_nw_corner_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf571691dabe6b190800000000000000
-      internalID: -7946905363760974341
+      spriteID: 55b208bbc9b620100800000000000000
+      internalID: 72738864896158549
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wooden_floor_left_wall_001_0: -7946905363760974341
+      wooden_floor_nw_corner_0: 72738864896158549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

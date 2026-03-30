@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9f7a03fbb38554181bc49c2d7cc623, type: 3}
+  m_Name: Wood_Floor_C_SW
+  m_EditorClassIdentifier: Assembly-CSharp::TileData
+  id: Wood_Floor_SE
+  displayName: Wood Floor SE
+  tile: {fileID: 11400000, guid: 88d8b601ce038c044accee3c5ed2dd04, type: 2}
+  passability: 0
+  canExitNorth: 1
+  canExitSouth: 0
+  canExitEast: 1
+  canExitWest: 0

@@ -5,7 +5,7 @@ public class Family : MonoBehaviour
 {
     [Header("Identity")]
     public string familyName;
-    public string homePlotId;
+    public Plot homePlot;
 
     [Header("Members")]
     public List<Agent> members = new();

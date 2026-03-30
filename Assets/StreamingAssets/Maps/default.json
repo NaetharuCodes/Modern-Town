@@ -360,7 +360,7 @@
                 {
                     "x": -10,
                     "y": -4,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_SE"
                 },
                 {
                     "x": -9,
@@ -370,7 +370,7 @@
                 {
                     "x": -8,
                     "y": -4,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_SE"
                 },
                 {
                     "x": -7,
@@ -420,7 +420,7 @@
                 {
                     "x": 2,
                     "y": -4,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_West"
                 },
                 {
                     "x": 3,
@@ -520,7 +520,7 @@
                 {
                     "x": -10,
                     "y": -3,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor_West"
                 },
                 {
                     "x": -9,
@@ -530,7 +530,7 @@
                 {
                     "x": -8,
                     "y": -3,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_E"
                 },
                 {
                     "x": -7,
@@ -580,7 +580,7 @@
                 {
                     "x": 2,
                     "y": -3,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_West"
                 },
                 {
                     "x": 3,
@@ -615,17 +615,17 @@
                 {
                     "x": 9,
                     "y": -3,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_South"
                 },
                 {
                     "x": 10,
                     "y": -3,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_South"
                 },
                 {
                     "x": 11,
                     "y": -3,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_South"
                 },
                 {
                     "x": 12,
@@ -680,7 +680,7 @@
                 {
                     "x": -10,
                     "y": -2,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor_West"
                 },
                 {
                     "x": -9,
@@ -690,7 +690,7 @@
                 {
                     "x": -8,
                     "y": -2,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_E"
                 },
                 {
                     "x": -7,
@@ -740,12 +740,12 @@
                 {
                     "x": 2,
                     "y": -2,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_SE"
                 },
                 {
                     "x": 3,
                     "y": -2,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor_SE"
                 },
                 {
                     "x": 4,
@@ -840,7 +840,7 @@
                 {
                     "x": -10,
                     "y": -1,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor_West"
                 },
                 {
                     "x": -9,
@@ -850,7 +850,7 @@
                 {
                     "x": -8,
                     "y": -1,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_E"
                 },
                 {
                     "x": -7,
@@ -905,7 +905,7 @@
                 {
                     "x": 3,
                     "y": -1,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor_E"
                 },
                 {
                     "x": 4,
@@ -935,17 +935,17 @@
                 {
                     "x": 9,
                     "y": -1,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_North"
                 },
                 {
                     "x": 10,
                     "y": -1,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_North"
                 },
                 {
                     "x": 11,
                     "y": -1,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_North"
                 },
                 {
                     "x": 12,
@@ -1000,7 +1000,7 @@
                 {
                     "x": -10,
                     "y": 0,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor_West"
                 },
                 {
                     "x": -9,
@@ -1010,7 +1010,7 @@
                 {
                     "x": -8,
                     "y": 0,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_E"
                 },
                 {
                     "x": -7,
@@ -1060,12 +1060,12 @@
                 {
                     "x": 2,
                     "y": 0,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_SE"
                 },
                 {
                     "x": 3,
                     "y": 0,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor_E"
                 },
                 {
                     "x": 4,
@@ -1075,7 +1075,7 @@
                 {
                     "x": 5,
                     "y": 0,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_NE"
                 },
                 {
                     "x": 6,
@@ -1160,17 +1160,17 @@
                 {
                     "x": -10,
                     "y": 1,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor-NW"
                 },
                 {
                     "x": -9,
                     "y": 1,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_North"
                 },
                 {
                     "x": -8,
                     "y": 1,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor_E"
                 },
                 {
                     "x": -7,
@@ -1220,12 +1220,12 @@
                 {
                     "x": 2,
                     "y": 1,
-                    "id": "Grass_0"
+                    "id": "Wood_Floor-NW"
                 },
                 {
                     "x": 3,
                     "y": 1,
-                    "id": "Wood_Floor_Left_Wall_001"
+                    "id": "Wood_Floor_NE"
                 },
                 {
                     "x": 4,
@@ -1354,6 +1354,16 @@
                 },
                 {
                     "x": -3,
+                    "y": 2,
+                    "id": "Grass_0"
+                },
+                {
+                    "x": -2,
+                    "y": 2,
+                    "id": "Grass_0"
+                },
+                {
+                    "x": -1,
                     "y": 2,
                     "id": "Grass_0"
                 },
@@ -1509,6 +1519,11 @@
                 },
                 {
                     "x": -2,
+                    "y": 3,
+                    "id": "Grass_0"
+                },
+                {
+                    "x": -1,
                     "y": 3,
                     "id": "Grass_0"
                 },
